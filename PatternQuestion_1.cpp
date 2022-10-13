@@ -122,9 +122,9 @@ using namespace std;
 
 // Butterfly Pattern
 //
-int main(){
-    int n;
-    cin>>n;
+// int main(){
+//     int n;
+//     cin>>n;
     //
     // created bymistake but its a nice butterfly pattern to have a look at
     //n *=2;
@@ -143,7 +143,10 @@ int main(){
     //
     //
     //
-    /*
+//    
+
+//Attempt for utterfly
+/*
     required pattern 
     let's say for 
     n=4
@@ -161,47 +164,49 @@ int main(){
     thinking it of with two parts
 
     */
-   int j,jRdm;
-   for (int i = 1; i <= n; i++)
-   {
-    for (int j = 1; j <= n*2; j++)
-    {
-        if(j<=4){
-            j<=i ? cout<<" *" : cout<<"  ";
-        }else{
-            jRdm = j%4 == 0 ? 0:4-j%4 +1;
-            jRdm<=i ? cout<<" *" : cout<<"  ";
-        }
-    }
-    cout<<endl;
-   }
+
+//    int j,jRdm;
+//    for (int i = 1; i <= n; i++)
+//    {
+//     for (int j = 1; j <= n*2; j++)
+//     {
+//         if(j<=4){
+//             j<=i ? cout<<" *" : cout<<"  ";
+//         }else{
+//             jRdm = j%4 == 0 ? 0:4-j%4 +1;
+//             jRdm<=i ? cout<<" *" : cout<<"  ";
+//         }
+//     }
+//     cout<<endl;
+//    }
+//    //
+//     for (int i = n; i >= 1; i--)
+//    {
+//     for (int j = 1; j <= n*2; j++)
+//     {
+//         if(j<=4){
+//             j<=i ? cout<<" *" : cout<<"  ";
+//         }else{
+//             jRdm = j%4 == 0 ? 0:4-j%4 +1;
+//             jRdm<=i ? cout<<" *" : cout<<"  ";
+//         }
+//     }
+//     cout<<endl;
+//    }
    //
-    for (int i = n; i >= 1; i--)
-   {
-    for (int j = 1; j <= n*2; j++)
-    {
-        if(j<=4){
-            j<=i ? cout<<" *" : cout<<"  ";
-        }else{
-            jRdm = j%4 == 0 ? 0:4-j%4 +1;
-            jRdm<=i ? cout<<" *" : cout<<"  ";
-        }
-    }
-    cout<<endl;
-   }
    //
    //
-   //
-   /*
-   finally made the pattern all by myself Idont know how much time it took but 
-   finally I did it all by my own 
-   I dont know that wether this code is efficient or not thus lets check
-   */
+//   /*
+//   finally made the pattern all by myself Idont know how much time it took but 
+//   finally I did it all by my own 
+//  I dont know that wether this code is efficient or not thus lets check
+//   */
   //
   //
   //viewing their code
-  
-}
+
+//My also is better...
+
 
 
 
