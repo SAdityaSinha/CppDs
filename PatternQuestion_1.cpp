@@ -54,15 +54,155 @@ using namespace std;
 //     }
 // }
 
-// Inverted Half pyramid
+// // Inverted Half pyramid
+//
+// int main(){
+//     int n;
+//     cin>>n;
+//     for(int i=n;i>0;i--){
+//         for(int j=0;j<i;j++){
+//             cout<<"*";
+//         }
+//         cout<<endl;
+//     }
+// }
 
+// // Rotated Inverted Half pyramid
+// //
+// int main(){
+//     int n;
+//     cin>>n;
+//     for(int i =0;i<n;i++){
+//         // // My version
+//         // for(int j=0; j<n-(i+1);j++){
+//         //     cout<<" ";
+//         // }
+//         // for(int k = n-(i+1);k<n;k++){
+//         //     cout<<"*";
+//         // }
+//         //
+//         // // better optimized code
+//         for(int j=0;j<n;j++){
+//             if(j<(n-i)){
+//                 cout<<" ";
+//             }else{
+//                 cout<<"*";
+//             }
+//         }
+//         cout<<endl;
+//     }
+// }
+
+// // Half pyrimed of nUmbers
+// //
+// int main(){
+//     int n;
+//     cin>>n;
+//     for(int i=1;i<=n;i++){
+//         for(int j=0;j<i;j++){
+//             cout<<i;
+//         }
+//         cout<<endl;
+//     }
+// }
+
+// // Floyed's Triangle
+// //
+// int main(){
+//     int n;
+//     cin>>n;
+//     int v=0;
+//     for(int i=1;i<=n;i++){
+//         for(int j=0;j<i;j++){
+//             cout<<++v<<" ";
+//         }
+//         cout<<endl;
+//     }
+// }
+
+// Butterfly Pattern
+//
 int main(){
     int n;
     cin>>n;
-    for(int i=n;i>0;i--){
-        for(int j=0;j<i;j++){
-            cout<<"*";
+    //
+    // created bymistake but its a nice butterfly pattern to have a look at
+    //n *=2;
+    // for(int i = 1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(i== n/2 || i == n/2 +1 || i ==j || j ==1 || j == n || j == n-i+1){
+    //             cout<<"* ";
+    //         }else{
+    //             cout<<"  ";
+    //         }
+    //     }
+    //     cout<<endl;
+    // }
+    //
+    //Givin another try with myself
+    //
+    //
+    //
+    /*
+    required pattern 
+    let's say for 
+    n=4
+
+    *      *
+    **    **
+    ***  ***
+    ********
+    ********
+    ***  ***
+    **    **
+    *      *
+    
+    now --
+    thinking it of with two parts
+
+    */
+   int j,jRdm;
+   for (int i = 1; i <= n; i++)
+   {
+    for (int j = 1; j <= n*2; j++)
+    {
+        if(j<=4){
+            j<=i ? cout<<" *" : cout<<"  ";
+        }else{
+            jRdm = j%4 == 0 ? 0:4-j%4 +1;
+            jRdm<=i ? cout<<" *" : cout<<"  ";
         }
-        cout<<endl;
     }
+    cout<<endl;
+   }
+   //
+    for (int i = n; i >= 1; i--)
+   {
+    for (int j = 1; j <= n*2; j++)
+    {
+        if(j<=4){
+            j<=i ? cout<<" *" : cout<<"  ";
+        }else{
+            jRdm = j%4 == 0 ? 0:4-j%4 +1;
+            jRdm<=i ? cout<<" *" : cout<<"  ";
+        }
+    }
+    cout<<endl;
+   }
+   //
+   //
+   //
+   /*
+   finally made the pattern all by myself Idont know how much time it took but 
+   finally I did it all by my own 
+   I dont know that wether this code is efficient or not thus lets check
+   */
+  //
+  //
+  //viewing their code
+  
 }
+
+
+
+
